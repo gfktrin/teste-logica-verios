@@ -5,12 +5,12 @@ function vendingMachine(changeAmount, availableCoins) {
 
   for (let i = 0; i < availableCoins.length; i++) {
     while (changeAmount > valuesToTest[i]-0.01) {
-      coinsToReturn[i]++;
-      changeAmount-=valuesToTest[i];
-      availableCoins[i]--;
       if (availableCoins[i] === 0) {
         break;
       }
+      coinsToReturn[i]++;
+      changeAmount-=valuesToTest[i];
+      availableCoins[i]--;
     }
   }
   return coinsToReturn.reverse();
