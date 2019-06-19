@@ -1,0 +1,11 @@
+{
+  "name": "teste-logica-verios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Gabriel Trindade",
+  "license": "ISC"
+}
